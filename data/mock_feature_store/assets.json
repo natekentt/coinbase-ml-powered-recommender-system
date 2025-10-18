@@ -1,402 +1,402 @@
 [
   {
-    "assetId": "429b7a23",
+    "assetId": "f5c2e90f",
     "ticker": "COIN_0",
-    "sector": "Layer 1",
-    "market_cap_usd": 46365295738.62,
-    "volatility_index": 0.376,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "3740595e",
-    "ticker": "COIN_1",
-    "sector": "Gaming",
-    "market_cap_usd": 72098770957.39,
-    "volatility_index": 0.417,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "aba3daf1",
-    "ticker": "COIN_2",
-    "sector": "AI",
-    "market_cap_usd": 88186698766.66,
-    "volatility_index": 0.172,
-    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
-  },
-  {
-    "assetId": "439a684c",
-    "ticker": "COIN_3",
     "sector": "Stablecoin",
-    "market_cap_usd": 90291620790.11,
-    "volatility_index": 0.837,
+    "market_cap_usd": 81189340420.47,
+    "volatility_index": 0.38,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "8feccafb",
-    "ticker": "COIN_4",
+    "assetId": "247e042f",
+    "ticker": "COIN_1",
+    "sector": "Layer 1",
+    "market_cap_usd": 10455627116.77,
+    "volatility_index": 0.216,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "f76f6b8d",
+    "ticker": "COIN_2",
     "sector": "DeFi",
-    "market_cap_usd": 33812309457.93,
-    "volatility_index": 0.293,
+    "market_cap_usd": 94444226402.83,
+    "volatility_index": 0.608,
     "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
   },
   {
-    "assetId": "963e7462",
+    "assetId": "378215a5",
+    "ticker": "COIN_3",
+    "sector": "AI",
+    "market_cap_usd": 97690673999.53,
+    "volatility_index": 0.71,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "3119fa94",
+    "ticker": "COIN_4",
+    "sector": "Layer 1",
+    "market_cap_usd": 12598124307.97,
+    "volatility_index": 0.181,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "bae81195",
     "ticker": "COIN_5",
     "sector": "Stablecoin",
-    "market_cap_usd": 75256733887.38,
-    "volatility_index": 0.377,
+    "market_cap_usd": 10886380102.74,
+    "volatility_index": 0.165,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "7961fb06",
+    "assetId": "8a1d1915",
     "ticker": "COIN_6",
+    "sector": "Layer 1",
+    "market_cap_usd": 49165294005.14,
+    "volatility_index": 0.549,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "439c2141",
+    "ticker": "COIN_7",
+    "sector": "Layer 1",
+    "market_cap_usd": 80098969336.62,
+    "volatility_index": 0.584,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "df2de185",
+    "ticker": "COIN_8",
     "sector": "DeFi",
-    "market_cap_usd": 80336983854.81,
-    "volatility_index": 0.582,
+    "market_cap_usd": 99653048160.04,
+    "volatility_index": 0.263,
     "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
   },
   {
-    "assetId": "e137b7a9",
-    "ticker": "COIN_7",
+    "assetId": "884815d8",
+    "ticker": "COIN_9",
     "sector": "Stablecoin",
-    "market_cap_usd": 33963900351.69,
-    "volatility_index": 0.636,
+    "market_cap_usd": 85442310108.59,
+    "volatility_index": 0.71,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "71e16bff",
-    "ticker": "COIN_8",
-    "sector": "Layer 1",
-    "market_cap_usd": 8466711999.74,
-    "volatility_index": 0.358,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "bdab5705",
-    "ticker": "COIN_9",
-    "sector": "Layer 1",
-    "market_cap_usd": 8296854909.15,
-    "volatility_index": 0.511,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "c9d7b6ce",
+    "assetId": "cfa928d3",
     "ticker": "COIN_10",
-    "sector": "AI",
-    "market_cap_usd": 62069293662.17,
-    "volatility_index": 0.811,
-    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+    "sector": "Layer 1",
+    "market_cap_usd": 32428764173.55,
+    "volatility_index": 0.501,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
   },
   {
-    "assetId": "edbaf96c",
+    "assetId": "cd2de876",
     "ticker": "COIN_11",
     "sector": "AI",
-    "market_cap_usd": 37174693134.33,
-    "volatility_index": 0.11,
+    "market_cap_usd": 93866787814.6,
+    "volatility_index": 0.622,
     "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
   },
   {
-    "assetId": "5d858193",
+    "assetId": "f12c3911",
     "ticker": "COIN_12",
-    "sector": "Stablecoin",
-    "market_cap_usd": 78468302380.66,
-    "volatility_index": 0.54,
-    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
+    "sector": "Layer 1",
+    "market_cap_usd": 32392447789.6,
+    "volatility_index": 0.753,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
   },
   {
-    "assetId": "9f23d08f",
+    "assetId": "0a140373",
     "ticker": "COIN_13",
     "sector": "DeFi",
-    "market_cap_usd": 77049261654.36,
-    "volatility_index": 0.374,
+    "market_cap_usd": 72239127531.99,
+    "volatility_index": 0.25,
     "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
   },
   {
-    "assetId": "e61dc0ca",
+    "assetId": "c6a63f35",
     "ticker": "COIN_14",
     "sector": "Stablecoin",
-    "market_cap_usd": 59356663667.58,
-    "volatility_index": 0.225,
+    "market_cap_usd": 22468447135.65,
+    "volatility_index": 0.125,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "fc7af837",
+    "assetId": "1f13306e",
     "ticker": "COIN_15",
+    "sector": "Layer 1",
+    "market_cap_usd": 546720669.34,
+    "volatility_index": 0.315,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "7f3df2c8",
+    "ticker": "COIN_16",
     "sector": "AI",
-    "market_cap_usd": 21299651581.97,
-    "volatility_index": 0.675,
+    "market_cap_usd": 9882176161.95,
+    "volatility_index": 0.299,
     "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
   },
   {
-    "assetId": "776c6e0a",
-    "ticker": "COIN_16",
+    "assetId": "cf48f2c8",
+    "ticker": "COIN_17",
     "sector": "Stablecoin",
-    "market_cap_usd": 65195063602.69,
-    "volatility_index": 0.677,
+    "market_cap_usd": 45424573157.45,
+    "volatility_index": 0.592,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "815eb599",
-    "ticker": "COIN_17",
-    "sector": "Gaming",
-    "market_cap_usd": 13740503525.22,
-    "volatility_index": 0.551,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "29222703",
+    "assetId": "7a17add1",
     "ticker": "COIN_18",
-    "sector": "Layer 1",
-    "market_cap_usd": 3217941710.5,
-    "volatility_index": 0.829,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+    "sector": "AI",
+    "market_cap_usd": 2142532305.72,
+    "volatility_index": 0.358,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
   },
   {
-    "assetId": "baab442d",
+    "assetId": "56c7d999",
     "ticker": "COIN_19",
-    "sector": "Gaming",
-    "market_cap_usd": 11965246780.96,
-    "volatility_index": 0.646,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
+    "sector": "Stablecoin",
+    "market_cap_usd": 52821534122.7,
+    "volatility_index": 0.208,
+    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "5bf31bef",
+    "assetId": "86d0df0f",
     "ticker": "COIN_20",
-    "sector": "Layer 1",
-    "market_cap_usd": 80448884513.26,
-    "volatility_index": 0.288,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+    "sector": "Stablecoin",
+    "market_cap_usd": 16881053660.42,
+    "volatility_index": 0.422,
+    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "74dd4adc",
+    "assetId": "1e01f94f",
     "ticker": "COIN_21",
+    "sector": "AI",
+    "market_cap_usd": 50482791675.2,
+    "volatility_index": 0.736,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "70e961d1",
+    "ticker": "COIN_22",
     "sector": "Gaming",
-    "market_cap_usd": 20021491777.28,
-    "volatility_index": 0.181,
+    "market_cap_usd": 65830126929.03,
+    "volatility_index": 0.393,
     "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
   },
   {
-    "assetId": "e9203c0c",
-    "ticker": "COIN_22",
+    "assetId": "6c1bddbb",
+    "ticker": "COIN_23",
     "sector": "DeFi",
-    "market_cap_usd": 75201834900.65,
-    "volatility_index": 0.712,
+    "market_cap_usd": 94304942886.62,
+    "volatility_index": 0.387,
     "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
   },
   {
-    "assetId": "2a3d6182",
-    "ticker": "COIN_23",
-    "sector": "Layer 1",
-    "market_cap_usd": 8189577071.21,
-    "volatility_index": 0.621,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "b0672ca4",
+    "assetId": "2e14f5f3",
     "ticker": "COIN_24",
     "sector": "Stablecoin",
-    "market_cap_usd": 28006254394.18,
-    "volatility_index": 0.311,
+    "market_cap_usd": 92062753536.99,
+    "volatility_index": 0.383,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "b1b7901a",
+    "assetId": "6328b72f",
     "ticker": "COIN_25",
-    "sector": "DeFi",
-    "market_cap_usd": 72615739873.88,
-    "volatility_index": 0.117,
-    "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
+    "sector": "Layer 1",
+    "market_cap_usd": 90969207241.18,
+    "volatility_index": 0.633,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
   },
   {
-    "assetId": "8e58dccf",
+    "assetId": "91a64cbe",
     "ticker": "COIN_26",
     "sector": "Layer 1",
-    "market_cap_usd": 81747640942.78,
-    "volatility_index": 0.394,
+    "market_cap_usd": 95949931139.8,
+    "volatility_index": 0.827,
     "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
   },
   {
-    "assetId": "d33b80d3",
+    "assetId": "520b6b2d",
     "ticker": "COIN_27",
-    "sector": "Layer 1",
-    "market_cap_usd": 18391996941.93,
-    "volatility_index": 0.664,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "877bad46",
-    "ticker": "COIN_28",
-    "sector": "Layer 1",
-    "market_cap_usd": 40308660354.01,
-    "volatility_index": 0.574,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "80412355",
-    "ticker": "COIN_29",
-    "sector": "Gaming",
-    "market_cap_usd": 17779117562.5,
-    "volatility_index": 0.233,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "c8dda054",
-    "ticker": "COIN_30",
-    "sector": "Stablecoin",
-    "market_cap_usd": 26664259670.85,
-    "volatility_index": 0.704,
-    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
-  },
-  {
-    "assetId": "c3d3bbb4",
-    "ticker": "COIN_31",
-    "sector": "Layer 1",
-    "market_cap_usd": 27765038576.02,
-    "volatility_index": 0.211,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "218b81ee",
-    "ticker": "COIN_32",
-    "sector": "Layer 1",
-    "market_cap_usd": 67783891630.72,
-    "volatility_index": 0.367,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "97c22413",
-    "ticker": "COIN_33",
-    "sector": "Stablecoin",
-    "market_cap_usd": 70566597658.11,
-    "volatility_index": 0.508,
-    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
-  },
-  {
-    "assetId": "f2707afb",
-    "ticker": "COIN_34",
-    "sector": "Stablecoin",
-    "market_cap_usd": 83026151617.51,
-    "volatility_index": 0.185,
-    "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
-  },
-  {
-    "assetId": "91e6348f",
-    "ticker": "COIN_35",
-    "sector": "Gaming",
-    "market_cap_usd": 2237360938.12,
-    "volatility_index": 0.348,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "04f38049",
-    "ticker": "COIN_36",
     "sector": "AI",
-    "market_cap_usd": 62881874762.28,
-    "volatility_index": 0.524,
+    "market_cap_usd": 49650172317.25,
+    "volatility_index": 0.801,
     "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
   },
   {
-    "assetId": "4f1f6dfb",
-    "ticker": "COIN_37",
+    "assetId": "e0bed4e2",
+    "ticker": "COIN_28",
+    "sector": "Layer 1",
+    "market_cap_usd": 24038426372.07,
+    "volatility_index": 0.33,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "5b81534a",
+    "ticker": "COIN_29",
+    "sector": "Layer 1",
+    "market_cap_usd": 38632545569.86,
+    "volatility_index": 0.445,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "32eb5057",
+    "ticker": "COIN_30",
+    "sector": "Gaming",
+    "market_cap_usd": 11583611781.54,
+    "volatility_index": 0.582,
+    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
+  },
+  {
+    "assetId": "1bd270e8",
+    "ticker": "COIN_31",
+    "sector": "Layer 1",
+    "market_cap_usd": 40876748596.96,
+    "volatility_index": 0.523,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "f1611a01",
+    "ticker": "COIN_32",
     "sector": "DeFi",
-    "market_cap_usd": 49240455979.97,
-    "volatility_index": 0.297,
+    "market_cap_usd": 18288084082.38,
+    "volatility_index": 0.819,
     "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
   },
   {
-    "assetId": "e8a39d26",
-    "ticker": "COIN_38",
-    "sector": "Gaming",
-    "market_cap_usd": 41667476412.19,
-    "volatility_index": 0.552,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "474bc2b6",
-    "ticker": "COIN_39",
-    "sector": "Layer 1",
-    "market_cap_usd": 70120641459.39,
-    "volatility_index": 0.793,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "0fc1173a",
-    "ticker": "COIN_40",
-    "sector": "AI",
-    "market_cap_usd": 83276978827.23,
-    "volatility_index": 0.83,
-    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
-  },
-  {
-    "assetId": "100a70b0",
-    "ticker": "COIN_41",
-    "sector": "Layer 1",
-    "market_cap_usd": 69917344478.2,
-    "volatility_index": 0.764,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "d7754be4",
-    "ticker": "COIN_42",
-    "sector": "Layer 1",
-    "market_cap_usd": 79038866059.68,
-    "volatility_index": 0.565,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "199d974e",
-    "ticker": "COIN_43",
-    "sector": "Gaming",
-    "market_cap_usd": 7601122806.7,
-    "volatility_index": 0.668,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "34f7c0d2",
-    "ticker": "COIN_44",
-    "sector": "AI",
-    "market_cap_usd": 20260633119.05,
-    "volatility_index": 0.635,
-    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
-  },
-  {
-    "assetId": "ab87f2b5",
-    "ticker": "COIN_45",
-    "sector": "Gaming",
-    "market_cap_usd": 9407327714.7,
-    "volatility_index": 0.157,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "01e9e323",
-    "ticker": "COIN_46",
-    "sector": "Gaming",
-    "market_cap_usd": 9525963465.49,
-    "volatility_index": 0.737,
-    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
-  },
-  {
-    "assetId": "093e6b3f",
-    "ticker": "COIN_47",
-    "sector": "Layer 1",
-    "market_cap_usd": 21252341104.17,
-    "volatility_index": 0.296,
-    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
-  },
-  {
-    "assetId": "ff598458",
-    "ticker": "COIN_48",
+    "assetId": "485497cd",
+    "ticker": "COIN_33",
     "sector": "Stablecoin",
-    "market_cap_usd": 98327599558.97,
-    "volatility_index": 0.569,
+    "market_cap_usd": 14944177924.29,
+    "volatility_index": 0.794,
     "asset_description_text": "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
   },
   {
-    "assetId": "e18ab4de",
-    "ticker": "COIN_49",
+    "assetId": "f1bca8e4",
+    "ticker": "COIN_34",
+    "sector": "AI",
+    "market_cap_usd": 85299093524.13,
+    "volatility_index": 0.606,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "48bcedd8",
+    "ticker": "COIN_35",
     "sector": "Layer 1",
-    "market_cap_usd": 30842250720.33,
-    "volatility_index": 0.475,
+    "market_cap_usd": 11682026965.75,
+    "volatility_index": 0.195,
     "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "dbab937e",
+    "ticker": "COIN_36",
+    "sector": "DeFi",
+    "market_cap_usd": 21156810310.33,
+    "volatility_index": 0.17,
+    "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
+  },
+  {
+    "assetId": "79754e2d",
+    "ticker": "COIN_37",
+    "sector": "AI",
+    "market_cap_usd": 85049931128.51,
+    "volatility_index": 0.381,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "a65880ac",
+    "ticker": "COIN_38",
+    "sector": "AI",
+    "market_cap_usd": 20728193387.98,
+    "volatility_index": 0.441,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "b0dad1cf",
+    "ticker": "COIN_39",
+    "sector": "Gaming",
+    "market_cap_usd": 8462308184.88,
+    "volatility_index": 0.458,
+    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
+  },
+  {
+    "assetId": "f3ce34f2",
+    "ticker": "COIN_40",
+    "sector": "DeFi",
+    "market_cap_usd": 6158355192.84,
+    "volatility_index": 0.76,
+    "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
+  },
+  {
+    "assetId": "fd31eb01",
+    "ticker": "COIN_41",
+    "sector": "Gaming",
+    "market_cap_usd": 96711517923.02,
+    "volatility_index": 0.535,
+    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
+  },
+  {
+    "assetId": "9e60bc5f",
+    "ticker": "COIN_42",
+    "sector": "AI",
+    "market_cap_usd": 4760264679.48,
+    "volatility_index": 0.203,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "874a31a8",
+    "ticker": "COIN_43",
+    "sector": "DeFi",
+    "market_cap_usd": 12871542118.53,
+    "volatility_index": 0.407,
+    "asset_description_text": "Highly competitive decentralized project focusing on DeFi infrastructure and governance."
+  },
+  {
+    "assetId": "2760d410",
+    "ticker": "COIN_44",
+    "sector": "AI",
+    "market_cap_usd": 33398864053.79,
+    "volatility_index": 0.565,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "a60e65f9",
+    "ticker": "COIN_45",
+    "sector": "AI",
+    "market_cap_usd": 65017066164.87,
+    "volatility_index": 0.814,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "7cecbd58",
+    "ticker": "COIN_46",
+    "sector": "AI",
+    "market_cap_usd": 61745083471.27,
+    "volatility_index": 0.126,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
+  },
+  {
+    "assetId": "34791b03",
+    "ticker": "COIN_47",
+    "sector": "Gaming",
+    "market_cap_usd": 59912628591.67,
+    "volatility_index": 0.73,
+    "asset_description_text": "Highly competitive decentralized project focusing on Gaming infrastructure and governance."
+  },
+  {
+    "assetId": "09acd0fd",
+    "ticker": "COIN_48",
+    "sector": "Layer 1",
+    "market_cap_usd": 36391646257.99,
+    "volatility_index": 0.66,
+    "asset_description_text": "Highly competitive decentralized project focusing on Layer 1 infrastructure and governance."
+  },
+  {
+    "assetId": "b03911d9",
+    "ticker": "COIN_49",
+    "sector": "AI",
+    "market_cap_usd": 5467832400.88,
+    "volatility_index": 0.494,
+    "asset_description_text": "Highly competitive decentralized project focusing on AI infrastructure and governance."
   }
 ]

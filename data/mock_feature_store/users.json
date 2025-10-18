@@ -1,702 +1,702 @@
 [
   {
-    "userId": "a88df111-e77",
-    "region": "EU",
+    "userId": "2adf549f-6bb",
+    "region": "US",
     "risk_score": "HIGH",
     "account_tier": "Retail",
     "favorite_sector": "DeFi"
   },
   {
-    "userId": "f26fd555-d15",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "5f2c534c-303",
+    "userId": "ce0d7410-7fc",
     "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "51387ac4-193",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "49b04fde-698",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "7c09a347-47a",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "fffb2a02-598",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "d0c7d47b-73d",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "fcd83824-deb",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "9b81d33b-fcc",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "631c987f-8bc",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "a1eeeb93-3c5",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "22b389bd-82e",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "caef6bfc-52d",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "b0c17d10-20b",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "17591660-16f",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "e6625c31-bf6",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "3268df50-71f",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "75bb0455-8ed",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "ce85c544-65f",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "19baa6f0-e2c",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "7769124f-4f4",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "8ef722b2-e28",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "52542e27-d80",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "fad4db9e-c4a",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "c210a1b3-291",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "026fdae6-fb8",
-    "region": "EU",
     "risk_score": "MEDIUM",
     "account_tier": "Pro",
     "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "2ea43e98-b6e",
+    "userId": "8b623f22-275",
     "region": "APAC",
-    "risk_score": "LOW",
+    "risk_score": "MEDIUM",
     "account_tier": "Retail",
     "favorite_sector": "AI"
   },
   {
-    "userId": "3bc8198c-083",
+    "userId": "25cd67a9-0c6",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "bc85de08-e14",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "d7558bd6-2ed",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "b774ee1c-02e",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "bc14b5e7-071",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "3af51c60-f0b",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "f75694ba-4b5",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "1170dde6-deb",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "acacf786-1e1",
     "region": "US",
     "risk_score": "LOW",
     "account_tier": "Pro",
     "favorite_sector": "AI"
   },
   {
-    "userId": "0b8de3ad-661",
+    "userId": "93c96ca8-94f",
     "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "ebdec4af-8cc",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "059524fe-04a",
+    "region": "EU",
     "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "680e590f-3cb",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "811552a7-dfb",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "1dfe0e94-998",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "334c93dc-efa",
-    "region": "APAC",
-    "risk_score": "HIGH",
     "account_tier": "Retail",
     "favorite_sector": "Gaming"
   },
   {
-    "userId": "fbbccfa9-d6d",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "4196cba8-807",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "4da63080-4c5",
+    "userId": "80de4f3c-154",
     "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "31862807-ca9",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "de574d55-51a",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "5f46faa7-1d0",
-    "region": "APAC",
-    "risk_score": "HIGH",
+    "risk_score": "LOW",
     "account_tier": "Retail",
     "favorite_sector": "DeFi"
   },
   {
-    "userId": "8ee964bf-246",
+    "userId": "181dbc1e-30c",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "762f0e33-150",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "14fdbb9f-829",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "6980028a-7fe",
     "region": "US",
     "risk_score": "MEDIUM",
     "account_tier": "Retail",
     "favorite_sector": "DeFi"
   },
   {
-    "userId": "647b32b4-8b2",
-    "region": "US",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "e4d3f3b1-5b1",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "36314687-393",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "f695aff4-9f8",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "922469ae-242",
+    "userId": "66a0b125-6e1",
     "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "3dd6d731-938",
-    "region": "US",
-    "risk_score": "MEDIUM",
+    "risk_score": "LOW",
     "account_tier": "Retail",
     "favorite_sector": "Gaming"
   },
   {
-    "userId": "a15d7bab-18b",
-    "region": "US",
+    "userId": "b1f05030-670",
+    "region": "APAC",
     "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
   },
   {
-    "userId": "b4968854-281",
+    "userId": "f89fcc18-537",
     "region": "US",
-    "risk_score": "HIGH",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "be2b5388-2a5",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "9c24d5df-8eb",
+    "region": "US",
+    "risk_score": "MEDIUM",
     "account_tier": "Pro",
     "favorite_sector": "Gaming"
   },
   {
-    "userId": "bdcc5bc0-aa8",
-    "region": "US",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "824dd0e4-abd",
-    "region": "US",
+    "userId": "fa294f11-e00",
+    "region": "APAC",
     "risk_score": "HIGH",
     "account_tier": "Retail",
     "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "b747c469-258",
+    "userId": "591dcc7a-da3",
     "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "5b22772a-779",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "f1232917-1c1",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "66c74de3-9a5",
+    "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "85590fc6-d46",
+    "region": "EU",
     "risk_score": "HIGH",
     "account_tier": "Pro",
     "favorite_sector": "Gaming"
   },
   {
-    "userId": "a4a28d39-3ae",
-    "region": "US",
-    "risk_score": "MEDIUM",
+    "userId": "03eb8b86-0e1",
+    "region": "EU",
+    "risk_score": "HIGH",
     "account_tier": "Retail",
     "favorite_sector": "AI"
   },
   {
-    "userId": "bbda224d-386",
+    "userId": "53b65e7e-f79",
     "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "1003ecee-ecb",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "c3c6743e-1e2",
+    "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "60c773be-3d1",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "cf4fdc1e-d92",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "5ad9c6e3-a98",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "08b0ec33-e79",
+    "region": "EU",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "53124066-773",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "d6fd44fb-209",
+    "region": "EU",
     "risk_score": "HIGH",
     "account_tier": "Pro",
     "favorite_sector": "AI"
   },
   {
-    "userId": "12b58e34-152",
+    "userId": "708df095-764",
     "region": "US",
-    "risk_score": "MEDIUM",
+    "risk_score": "LOW",
     "account_tier": "Pro",
-    "favorite_sector": "DeFi"
+    "favorite_sector": "Layer 1"
   },
   {
-    "userId": "351e0a4d-0b9",
-    "region": "EU",
+    "userId": "01567686-40d",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "f701958c-878",
+    "region": "US",
     "risk_score": "HIGH",
     "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "1f6ad6ff-5fa",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "56f9a641-ab7",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "4e16a571-55f",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "ddbe8c38-441",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "b00029af-f6f",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "09088bc6-7ab",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "65b233f5-9b6",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "35d75ee5-6e6",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
     "favorite_sector": "Gaming"
   },
   {
-    "userId": "b2f7b33c-095",
+    "userId": "2e8b005b-d43",
     "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "e7d86738-3ab",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "43257130-2e1",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "a2137482-3eb",
-    "region": "EU",
     "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "9ca5ee3c-a30",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "51284374-eb1",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
     "account_tier": "Pro",
-    "favorite_sector": "Gaming"
+    "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "4d34fd22-558",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "2ffcbc90-799",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "d16d752f-672",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "222f8b11-f4a",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "716a16bf-262",
+    "userId": "d9cc26ca-f45",
     "region": "EU",
     "risk_score": "MEDIUM",
     "account_tier": "Retail",
     "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "6586ec09-0fa",
+    "userId": "386f6912-c60",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "d1454a69-136",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "36c493e2-0c8",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "2f2a9fde-921",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "35f79dbe-275",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "29fdbe59-073",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "75e743e8-1a2",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "6c1666d7-9cf",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "1bc1c357-fbc",
+    "region": "EU",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "744a3453-7ae",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "4f57ab85-327",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "defd61dd-614",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "1a1d9ea1-0a2",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "d93ab72d-16f",
+    "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "c69f17c9-7d8",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "04583a03-5e0",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "7505aefe-956",
+    "region": "EU",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "3f67d534-0c9",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "e959a083-70d",
+    "region": "EU",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "6087d11c-ed9",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "4073b20a-e7e",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "064d4c3f-6e6",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "c4e45651-cc5",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "bdd72eb3-fc1",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "c8104751-107",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "75d87aa3-d66",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "10f617da-9c7",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "e7eb96b8-683",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "fe5fb65d-36b",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "d2358c55-1c2",
+    "region": "APAC",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "cd6793d8-727",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "581e704e-98c",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "148dde01-ea7",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "fbf17924-afe",
+    "region": "US",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "9763481c-e1b",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "ab80add2-97c",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "dddb6cb3-f7d",
+    "region": "EU",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Stablecoin"
+  },
+  {
+    "userId": "c01b95c6-f14",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "DeFi"
+  },
+  {
+    "userId": "3c0260a4-e96",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "e13286f4-7c5",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "8f36b2cc-4da",
+    "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "AI"
+  },
+  {
+    "userId": "38c61073-080",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "321c3aab-810",
+    "region": "US",
+    "risk_score": "MEDIUM",
+    "account_tier": "Retail",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "4fd68f28-2f7",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Retail",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "e4179fae-b58",
+    "region": "APAC",
+    "risk_score": "HIGH",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "49bc0f37-9a6",
+    "region": "EU",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "3b36e9ca-eb3",
+    "region": "US",
+    "risk_score": "LOW",
+    "account_tier": "Pro",
+    "favorite_sector": "Layer 1"
+  },
+  {
+    "userId": "b42b0c3a-23b",
+    "region": "APAC",
+    "risk_score": "LOW",
+    "account_tier": "Retail",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "3bb032a5-998",
     "region": "APAC",
     "risk_score": "HIGH",
     "account_tier": "Pro",
     "favorite_sector": "DeFi"
   },
   {
-    "userId": "8c8a0cb1-bc5",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "0e0ff88b-e69",
+    "userId": "35cbfe6b-ebf",
     "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "3a4916f3-a83",
-    "region": "US",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "b82616ab-90c",
-    "region": "APAC",
     "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "9055a697-7ae",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "8e887908-8dc",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
+    "account_tier": "Retail",
     "favorite_sector": "Layer 1"
   },
   {
-    "userId": "f835a35f-b3c",
+    "userId": "56c8c7df-bfb",
     "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "e2f4e6d3-402",
-    "region": "EU",
     "risk_score": "LOW",
     "account_tier": "Retail",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "a3efda3a-999",
-    "region": "US",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "AI"
-  },
-  {
-    "userId": "cb0d5432-0b8",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
     "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "feeb9f85-863",
-    "region": "US",
+    "userId": "847465fd-cdb",
+    "region": "EU",
+    "risk_score": "MEDIUM",
+    "account_tier": "Pro",
+    "favorite_sector": "Gaming"
+  },
+  {
+    "userId": "cd4a6e6f-fd7",
+    "region": "APAC",
     "risk_score": "LOW",
     "account_tier": "Retail",
-    "favorite_sector": "Gaming"
+    "favorite_sector": "Stablecoin"
   },
   {
-    "userId": "aa37e513-5a8",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "896d5f9d-748",
-    "region": "US",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "c43533d0-69e",
+    "userId": "b881f56f-444",
     "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Retail",
-    "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "a20bc151-f11",
-    "region": "US",
     "risk_score": "LOW",
     "account_tier": "Retail",
     "favorite_sector": "DeFi"
-  },
-  {
-    "userId": "ad358765-eb4",
-    "region": "US",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "fd2b318a-efe",
-    "region": "APAC",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "04bb2784-98b",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "e4891056-15a",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "7d34cec4-7bd",
-    "region": "EU",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "9b0a6891-64f",
-    "region": "APAC",
-    "risk_score": "MEDIUM",
-    "account_tier": "Retail",
-    "favorite_sector": "Gaming"
-  },
-  {
-    "userId": "28821992-62f",
-    "region": "EU",
-    "risk_score": "HIGH",
-    "account_tier": "Pro",
-    "favorite_sector": "Layer 1"
-  },
-  {
-    "userId": "16f1db1b-a8b",
-    "region": "APAC",
-    "risk_score": "LOW",
-    "account_tier": "Retail",
-    "favorite_sector": "Stablecoin"
-  },
-  {
-    "userId": "b69f1e56-4cd",
-    "region": "EU",
-    "risk_score": "LOW",
-    "account_tier": "Pro",
-    "favorite_sector": "AI"
   }
 ]
