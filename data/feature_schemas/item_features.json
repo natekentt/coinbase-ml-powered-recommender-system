@@ -1,0 +1,36 @@
+{
+    "entity_name": "coinbase_entity",
+    "features": [
+        {
+            "name": "assetId",
+            "data_type": "STRING",
+            "description": "Unique identifier for the asset/entity.",
+            "is_key": true
+        },
+        {
+            "name": "ticker",
+            "data_type": "STRING",
+            "description": "The stock/crypto ticker symbol (e.g., COIN_5)."
+        },
+        {
+            "name": "sector",
+            "data_type": "CATEGORICAL",
+            "description": "The crypto market sector (e.g., DeFi, Layer 1). Used for categorical features."
+        },
+        {
+            "name": "market_cap_usd",
+            "data_type": "FLOAT",
+            "description": "The current market capitalization in USD. Used as a numerical feature."
+        },
+        {
+            "name": "volatility_index",
+            "data_type": "FLOAT",
+            "description": "An index representing the asset's price volatility (0.0 to 1.0)."
+        },
+        {
+            "name": "asset_description_text",
+            "data_type": "TEXT",
+            "description": "A descriptive text field. This will be consumed by a Sentence Transformer to create a dense embedding."
+        }
+    ]
+}

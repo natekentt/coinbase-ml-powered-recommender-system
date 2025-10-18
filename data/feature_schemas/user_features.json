@@ -1,0 +1,31 @@
+{
+    "entity_name": "user_profile",
+    "features": [
+        {
+            "name": "userId",
+            "data_type": "STRING",
+            "description": "Unique identifier for the user.",
+            "is_key": true
+        },
+        {
+            "name": "region",
+            "data_type": "CATEGORICAL",
+            "description": "User's geographical region (e.g., US, EU, APAC). Used as a static feature."
+        },
+        {
+            "name": "risk_score",
+            "data_type": "CATEGORICAL",
+            "description": "User's calculated risk tolerance (e.g., LOW, MEDIUM, HIGH)."
+        },
+        {
+            "name": "account_tier",
+            "data_type": "CATEGORICAL",
+            "description": "User's account status (Retail or Pro)."
+        },
+        {
+            "name": "favorite_sector",
+            "data_type": "CATEGORICAL",
+            "description": "A simulated behavioral bias indicating the user's preferred asset sector."
+        }
+    ]
+}

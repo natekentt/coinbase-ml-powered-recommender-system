@@ -1,0 +1,34 @@
+{
+    "entity_name": "user_asset_interactions",
+    "features": [
+        {
+            "name": "userId",
+            "data_type": "STRING",
+            "description": "Foreign key linking to the user entity.",
+            "is_key": true,
+            "link": "user_profile"
+        },
+        {
+            "name": "assetId",
+            "data_type": "STRING",
+            "description": "Foreign key linking to the item (asset) entity.",
+            "is_key": true,
+            "link": "coinbase_entity"
+        },
+        {
+            "name": "timestamp",
+            "data_type": "TIMESTAMP",
+            "description": "The exact time of the interaction. Crucial for time-based data splits and sequence modeling."
+        },
+        {
+            "name": "interaction_type",
+            "data_type": "CATEGORICAL",
+            "description": "The type of explicit/implicit interaction (e.g., VIEW, CLICK, TRADE_SMALL, TRADE_LARGE)."
+        },
+        {
+            "name": "target",
+            "data_type": "INT",
+            "description": "The binary label (0 or 1) used as the ground truth for training the Dual-Tower model. 1 indicates a positive signal (e.g., trade, click, high engagement), 0 otherwise."
+        }
+    ]
+}
