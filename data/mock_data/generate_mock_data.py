@@ -1,163 +1,122 @@
-import json
+import pandas as pd
+import numpy as np
+import os
 import random
-import uuid
-from datetime import datetime, timedelta
-import os # Imported for file path handling
 
-# --- Configuration for Mock Data Generation ---
-# Set the number of entities for generation
-N_USERS = 100
-N_ASSETS = 50
-N_INTERACTIONS = 5000  # Total number of implicit interactions to generate
-OUTPUT_DIR = "./data/mock_feature_store" # Define the local directory to store the mock feature data
+# --- Configuration ---
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_ROOT, 'mock_data')
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# Feature definitions aligning with the schemas
-ASSET_SECTORS = ["DeFi", "Layer 1", "Gaming", "Stablecoin", "AI"]
-USER_REGIONS = ["US", "EU", "APAC"]
-RISK_SCORES = ["LOW", "MEDIUM", "HIGH"]
-ACCOUNT_TIERS = ["Retail", "Pro"]
-INTERACTION_TYPES = ["VIEW", "CLICK", "TRADE_SMALL", "TRADE_LARGE"]
+NUM_USERS = 5000
+NUM_ASSETS = 100
+NUM_INTERACTIONS = 500000  # Total rows for the final dataset
 
-START_DATE = datetime(2024, 1, 1)
+# --- 1. User Data Generation ---
 
-def generate_asset_data(n_assets):
-    """Generates synthetic Item Feature Sets (Coinbase Entities)."""
-    assets = []
-    asset_ids = [str(uuid.uuid4())[:8] for _ in range(n_assets)]
-
-    for i, asset_id in enumerate(asset_ids):
-        sector = random.choice(ASSET_SECTORS)
-        
-        # Simple text description for the NLP embedding layer (aligned with item_features.json)
-        description = f"Highly competitive decentralized project focusing on {sector} infrastructure and governance."
-        if sector == "Stablecoin":
-            description = "A robust digital asset pegged to the US dollar for reliable store-of-value functionality."
-
-        assets.append({
-            "assetId": asset_id,
-            "ticker": f"COIN_{i}",
-            "sector": sector,
-            "market_cap_usd": round(random.uniform(10_000_000, 100_000_000_000), 2),
-            "volatility_index": round(random.uniform(0.1, 0.9), 3),
-            "asset_description_text": description
-        })
-    return assets, asset_ids
-
-def generate_user_data(n_users):
-    """Generates synthetic User Feature Sets (User Profiles)."""
-    users = []
-    user_ids = [str(uuid.uuid4())[:12] for _ in range(n_users)]
+def generate_user_data(n_users: int) -> pd.DataFrame:
+    """Generates mock user features."""
+    countries = ['US', 'CA', 'GB', 'DE', 'AU', 'IN', 'JP', 'BR', 'MX', 'SG']
+    devices = ['mobile', 'desktop', 'tablet']
     
-    # Map to simulate the user's intrinsic preference/bias
-    user_bias = {uid: random.choice(ASSET_SECTORS) for uid in user_ids}
-
-    for user_id in user_ids:
-        users.append({
-            "userId": user_id,
-            "region": random.choice(USER_REGIONS),
-            "risk_score": random.choice(RISK_SCORES),
-            "account_tier": random.choice(ACCOUNT_TIERS),
-            "favorite_sector": user_bias[user_id] # Feature for modeling user bias
-        })
-    return users, user_ids, user_bias
-
-def generate_interaction_data(user_ids, assets, user_bias, n_interactions):
-    """Generates the Interaction Log (Training Ground Truth)."""
-    interactions = []
-    
-    asset_map = {asset['assetId']: asset for asset in assets}
-
-    for _ in range(n_interactions):
-        user_id = random.choice(user_ids)
-        user_favorite_sector = user_bias[user_id]
-
-        # Bias the selection: 70% chance to pick an asset from the user's favorite sector
-        if random.random() < 0.7:
-            biased_assets = [a for a in assets if a['sector'] == user_favorite_sector]
-            asset = random.choice(biased_assets) if biased_assets else random.choice(assets)
-        else:
-            # 30% chance for random interaction
-            asset = random.choice(assets)
-
-        # Generate a random timestamp within the defined period
-        random_days = random.randint(0, 30)
-        timestamp = START_DATE + timedelta(days=random_days, hours=random.randint(0, 23), minutes=random.randint(0, 59))
-
-        # Weight interaction types: VIEW is most common, TRADE_LARGE is least
-        interaction_type = random.choices(
-            INTERACTION_TYPES,
-            weights=[40, 30, 20, 10], 
-            k=1
-        )[0]
-
-        # Define positive target (1) for strong implicit feedback, 0 otherwise (aligned with interaction_log.json)
-        is_positive_interaction = interaction_type in ["CLICK", "TRADE_SMALL", "TRADE_LARGE"]
-
-        interactions.append({
-            "userId": user_id,
-            "assetId": asset['assetId'],
-            "timestamp": timestamp.isoformat(),
-            "interaction_type": interaction_type,
-            "target": 1 if is_positive_interaction else 0
-        })
-        
-    return interactions
-
-def generate_mock_data():
-    """Main function to orchestrate data generation."""
-    assets, asset_ids = generate_asset_data(N_ASSETS)
-    users, user_ids, user_bias = generate_user_data(N_USERS)
-    interactions = generate_interaction_data(user_ids, assets, user_bias, N_INTERACTIONS)
-
-    return {
-        "users": users,
-        "assets": assets,
-        "interactions": interactions
+    data = {
+        'user_id': [f'user_{i}' for i in range(n_users)],
+        'user_country': np.random.choice(countries, n_users),
+        'user_device_type': np.random.choice(devices, n_users, p=[0.6, 0.3, 0.1]),
+        # Continuous numerical features
+        'user_risk_score': np.random.uniform(1, 10, n_users).round(2), # 1 (low risk) to 10 (high risk)
+        'days_since_first_trade': np.random.poisson(365, n_users),
+        'recent_views_count': np.random.randint(0, 50, n_users)
     }
+    return pd.DataFrame(data)
 
-def save_mock_data(mock_data, output_dir):
-    """Saves the generated mock data into separate JSON files."""
-    # Ensure the directory exists
-    os.makedirs(output_dir, exist_ok=True)
+# --- 2. Item Data Generation ---
+
+def generate_asset_data(n_assets: int) -> pd.DataFrame:
+    """Generates mock asset (item) features."""
+    sectors = ['DeFi', 'Layer1', 'Gaming', 'AI', 'Stablecoin', 'Web3', 'Meme']
     
-    file_paths = {}
+    # Generate unique tickers
+    tickers = [f'ASSET{i}' for i in range(1, n_assets + 1)]
     
-    # Save Users (User Feature Set)
-    user_path = os.path.join(output_dir, "users.json")
-    with open(user_path, 'w') as f:
-        json.dump(mock_data["users"], f, indent=2)
-    file_paths["users"] = user_path
+    data = {
+        'asset_id': [f'asset_{i}' for i in range(n_assets)],
+        'asset_ticker': tickers,
+        'asset_sector': np.random.choice(sectors, n_assets, p=[0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.2]),
+        # Continuous numerical features
+        'market_cap_log': np.random.uniform(10, 15, n_assets).round(2), # Log market cap
+        'asset_volatility': np.random.uniform(0.01, 0.15, n_assets).round(4)
+    }
+    return pd.DataFrame(data)
 
-    # Save Assets (Item Feature Set)
-    asset_path = os.path.join(output_dir, "assets.json")
-    with open(asset_path, 'w') as f:
-        json.dump(mock_data["assets"], f, indent=2)
-    file_paths["assets"] = asset_path
+# --- 3. Interaction Data & Merging ---
 
-    # Save Interactions (Ground Truth Log)
-    interactions_path = os.path.join(output_dir, "interactions.json")
-    with open(interactions_path, 'w') as f:
-        json.dump(mock_data["interactions"], f, indent=2)
-    file_paths["interactions"] = interactions_path
+def generate_interaction_data(users_df: pd.DataFrame, assets_df: pd.DataFrame, n_interactions: int) -> pd.DataFrame:
+    """
+    Creates the final merged dataset with a binary target interaction column.
+    """
+    # Sample user_id and asset_id for interactions
+    interaction_data = pd.DataFrame({
+        'user_id': np.random.choice(users_df['user_id'], n_interactions),
+        'asset_id': np.random.choice(assets_df['asset_id'], n_interactions)
+    })
+
+    # Generate a binary target interaction label (e.g., 1=purchase/watchlist, 0=view)
+    # Simulate a bias: higher user risk scores and lower volatility assets might have a slightly higher chance of interaction
+    # This keeps the model training task realistic
     
-    return file_paths
+    # Merge with user features
+    df = pd.merge(interaction_data, users_df, on='user_id', how='left')
+    
+    # Merge with asset features
+    df = pd.merge(df, assets_df, on='asset_id', how='left')
+    
+    # Generate a pseudo-realistic target label
+    # Probability of interaction based on features
+    # NOTE: These weights are completely arbitrary for mocking data
+    
+    # Assign a baseline probability (e.g., 5% overall interaction rate)
+    baseline_prob = 0.05
+    
+    # Adjust probability based on mock features
+    # High risk score user is more likely to interact (+0.01 per point of risk score)
+    df['prob_boost'] = (df['user_risk_score'] - 1) / 9 * 0.1 
+    
+    # Low volatility asset is slightly less likely to be ignored
+    df['prob_boost'] -= (df['asset_volatility'] / 0.15) * 0.05
+    
+    # Cap probability
+    df['interaction_prob'] = baseline_prob + df['prob_boost']
+    df['interaction_prob'] = df['interaction_prob'].clip(lower=0.01, upper=0.20)
+    
+    # Generate the binary label
+    df['target_interaction'] = (np.random.rand(n_interactions) < df['interaction_prob']).astype(int)
+    
+    # Drop intermediate columns
+    df = df.drop(columns=['interaction_prob', 'prob_boost'])
+    
+    return df
 
+# --- Main Execution ---
 
 if __name__ == '__main__':
-    mock_data = generate_mock_data()
+    print("--- Starting Mock Data Generation ---")
     
-    # Save data to files
-    saved_files = save_mock_data(mock_data, OUTPUT_DIR)
+    # 1. Generate User and Asset tables
+    users_df = generate_user_data(NUM_USERS)
+    assets_df = generate_asset_data(NUM_ASSETS)
     
-    print("--- MOCK FEATURE STORE DATA SAMPLE ---")
-    # Print a sample of the structured mock data output in JSON format
-    print(json.dumps({
-        "users": mock_data["users"][:3],
-        "assets": mock_data["assets"][:3],
-        "interactions": mock_data["interactions"][:5]
-    }, indent=2))
+    print(f"Generated {len(users_df)} users and {len(assets_df)} assets.")
 
-    print(f"\nSuccessfully generated {len(mock_data['users'])} users, {len(mock_data['assets'])} assets, and {len(mock_data['interactions'])} interactions.")
-    print(f"Data saved to the '{OUTPUT_DIR}' directory as: ")
-    for key, path in saved_files.items():
-        print(f"  - {path}")
+    # 2. Generate Interactions and Merge
+    final_df = generate_interaction_data(users_df, assets_df, NUM_INTERACTIONS)
+    
+    # 3. Save the final merged data as CSV
+    OUTPUT_FILE_PATH = os.path.join(DATA_DIR, 'mock_coinbase_data.csv')
+    final_df.to_csv(OUTPUT_FILE_PATH, index=False)
+    
+    print(f"\nSuccessfully created and saved merged dataset to: {OUTPUT_FILE_PATH}")
+    print(f"Total interaction samples: {len(final_df)}")
+    print(f"Target interaction rate: {final_df['target_interaction'].mean():.4f}")
+    
+    print("\n--- Mock Data Generation Complete. Ready for Feature Engineering! ---")

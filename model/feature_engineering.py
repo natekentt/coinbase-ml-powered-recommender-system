@@ -1,115 +1,138 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import QuantileTransformer
-import sys
+import tensorflow as tf
 import os
-
-# Add project root to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from feature_store.offline_feature_loader import load_training_data
+import pickle
+from typing import Dict, List, Tuple
+from sklearn.model_selection import train_test_split
 
 # --- Configuration ---
-MAX_TOKENS = 10000  # Max vocabulary size for the Text Embedding
-SEQUENCE_LENGTH = 32 # Max length of the asset description text sequence
+# NOTE: This assumes the script is run from the project root or the 'data' directory is correctly relative.
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data/mock_data')
+RAW_DATA_PATH = os.path.join(DATA_DIR, 'mock_coinbase_data.csv')
+VOCAB_PATH = os.path.join(DATA_DIR, 'feature_vocabularies.pkl')
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# Define feature groups for clarity
-USER_CATEGORICAL_FEATURES = ['region', 'risk_score', 'account_tier', 'favorite_sector']
-ITEM_CATEGORICAL_FEATURES = ['ticker', 'sector']
-ITEM_NUMERICAL_FEATURES = ['market_cap_usd', 'volatility_index']
-ITEM_TEXT_FEATURE = 'asset_description_text'
+# Define output paths for splits
+TRAIN_DATA_PATH = os.path.join(DATA_DIR, 'train_data_split.pkl')
+VAL_DATA_PATH = os.path.join(DATA_DIR, 'val_data_split.pkl')
+TEST_DATA_PATH = os.path.join(DATA_DIR, 'test_data_split.pkl')
+
+# Feature Definitions (Must match the columns generated in generate_mock_data.py)
+USER_FEATURES = [
+    'user_country', 
+    'user_device_type', 
+    'user_risk_score', 
+    'days_since_first_trade', 
+    'recent_views_count'
+]
+ITEM_FEATURES = [
+    'asset_ticker', 
+    'asset_sector', 
+    'market_cap_log', 
+    'asset_volatility'
+]
+LABEL_FEATURE = 'target_interaction' # Binary label (e.g., 1 for click/purchase, 0 otherwise)
 
 
-def preprocess_numerical_features(df: pd.DataFrame, feature_name: str, transformer=None) -> tuple[pd.Series, QuantileTransformer]:
+def create_feature_vocabularies(df: pd.DataFrame) -> Tuple[Dict, Dict]:
     """
-    Applies a quantile transformation to numerical features to handle skewness
-    and ensure uniform distribution for better model performance.
-    
-    In a real MLOps system, the fitted transformer would be saved/versioned
-    and reused during serving to ensure consistency.
+    Creates vocabularies for all categorical features and saves them.
     """
-    data = df[[feature_name]].copy()
+    user_specs = {}
+    item_specs = {}
     
-    if transformer is None:
-        # Fit the transformer for the first time (during training)
-        transformer = QuantileTransformer(output_distribution='uniform', n_quantiles=len(data))
-        transformed_data = transformer.fit_transform(data)
-    else:
-        # Reuse the fitted transformer (during serving/inference)
-        transformed_data = transformer.transform(data)
+    # 1. Categorical Vocabularies
+    for feature in ['user_country', 'user_device_type']:
+        # Use unique values + 1 for OOV (Out-Of-Vocabulary) token
+        vocab = df[feature].astype(str).unique().tolist()
+        user_specs[feature] = {'vocab': vocab, 'is_categorical': True}
 
-    # Convert the numpy array back to a Series
-    return pd.Series(transformed_data.flatten(), name=f'{feature_name}_norm'), transformer
+    for feature in ['asset_ticker', 'asset_sector']:
+        vocab = df[feature].astype(str).unique().tolist()
+        item_specs[feature] = {'vocab': vocab, 'is_categorical': True}
 
+    # 2. Numerical Features (No vocab, just metadata)
+    for feature in ['user_risk_score', 'days_since_first_trade', 'recent_views_count']:
+        user_specs[feature] = {'is_categorical': False}
 
-def create_feature_pipeline(raw_df: pd.DataFrame) -> dict:
-    """
-    Orchestrates all feature engineering steps and organizes features 
-    into separate dictionaries for the User and Item Towers.
-    """
-    
-    # 1. Feature Dictionaries to be returned
-    user_features = {}
-    item_features = {}
-    
-    # --- 2. Numerical Feature Processing (Quantile Normalization) ---
-    print("\n[Engineering] Processing Numerical Features...")
-    
-    # NOTE: In a production scenario, we would save the fitted transformers 
-    # to disk and load them here. For this mock, we fit them during execution.
-    
-    for feature in ITEM_NUMERICAL_FEATURES:
-        normalized_series, _ = preprocess_numerical_features(raw_df, feature)
-        item_features[feature] = normalized_series.values
-    
-    # --- 3. Categorical Feature Processing (No transformation needed for pandas) ---
-    # We will let the Keras preprocessing layers (StringLookup, CategoryEncoding)
-    # handle the vocabulary and one-hot encoding *inside* the model definition.
-    print("[Engineering] Categorical Features will be handled by Keras layers.")
-    
-    for feature in USER_CATEGORICAL_FEATURES:
-        user_features[feature] = raw_df[feature].astype(str).values
+    for feature in ['market_cap_log', 'asset_volatility']:
+        item_specs[feature] = {'is_categorical': False}
         
-    for feature in ITEM_CATEGORICAL_FEATURES:
-        item_features[feature] = raw_df[feature].astype(str).values
-
-    # --- 4. Text Feature Processing (Tokenization and Sequence Length) ---
-    print("[Engineering] Preparing Text Feature for NLP Embedding.")
-    # For now, we pass the raw text. The Keras TextVectorization layer will handle 
-    # the heavy lifting (standardization, tokenization, vocab building) within the model.
-    item_features[ITEM_TEXT_FEATURE] = raw_df[ITEM_TEXT_FEATURE].astype(str).values
-
-    # --- 5. Target and Identifiers ---
-    # User and Item IDs are required for the final train/test split, 
-    # but not as model input features themselves.
+    # Save the specifications
+    vocabs = {'user_specs': user_specs, 'item_specs': item_specs}
+    with open(VOCAB_PATH, 'wb') as f:
+        pickle.dump(vocabs, f)
     
-    processed_output = {
-        'user_features': user_features,
-        'item_features': item_features,
-        'target': raw_df['target'].values,
-        'user_ids': raw_df['userId'].values,
-        'asset_ids': raw_df['assetId'].values,
-    }
+    print(f"Saved feature vocabularies to {VOCAB_PATH}")
+    return user_specs, item_specs
+
+def transform_and_split_data(df: pd.DataFrame):
+    """
+    Splits the DataFrame into train, val, and test sets using index splitting,
+    and transforms results into NumPy arrays for saving.
+    """
     
-    return processed_output
+    # 1. Get the indices for the entire dataframe and the labels for stratification
+    indices = df.index.values 
+    labels = df[LABEL_FEATURE].values.astype(np.float32)
+
+    # 2. Split indices for train (80%) and temp (20%)
+    # NOTE: We split the INDICES, but use the LABELS for stratification
+    train_indices, temp_indices, _, _ = train_test_split(
+        indices, labels, test_size=0.2, random_state=42, stratify=labels
+    )
+    
+    # 3. Split temp into validation (50% of temp) and test (50% of temp)
+    # We must slice the labels array based on temp_indices for stratification in the second split
+    temp_labels = labels[temp_indices]
+    val_indices, test_indices, _, _ = train_test_split(
+        temp_indices, temp_labels, test_size=0.5, random_state=42, stratify=temp_labels
+    )
+
+    # 4. Repack and save
+    data_splits = [
+        ('train', train_indices, TRAIN_DATA_PATH),
+        ('val', val_indices, VAL_DATA_PATH),
+        ('test', test_indices, TEST_DATA_PATH),
+    ]
+
+    all_features = USER_FEATURES + ITEM_FEATURES
+    
+    for name, indices, path in data_splits:
+        # Slice the entire dataframe using the split indices
+        df_split = df.iloc[indices]
+        
+        # Extract features and labels into NumPy arrays
+        split_features = {f: df_split[f].values for f in all_features}
+        split_labels = df_split[LABEL_FEATURE].values.astype(np.float32)
+
+        data_to_save = {
+            'features': split_features,
+            'labels': split_labels
+        }
+        with open(path, 'wb') as f:
+            pickle.dump(data_to_save, f)
+        print(f"Saved {name} split data to {path} (Samples: {len(indices)})")
 
 
+# --- Main Execution ---
 if __name__ == '__main__':
-    # 1. Load the raw joined data
-    raw_df = load_training_data()
+    print("--- Starting Feature Engineering Pipeline ---")
     
-    if not raw_df.empty:
-        # 2. Run the feature engineering pipeline
-        processed_data = create_feature_pipeline(raw_df)
+    if not os.path.exists(RAW_DATA_PATH):
+        print(f"Error: Raw data file not found at {RAW_DATA_PATH}. Please ensure 'mock_coinbase_data.csv' exists.")
+    else:
+        # Load data
+        df = pd.read_csv(RAW_DATA_PATH)
         
-        # 3. Print a summary of the processed output
-        print("\n--- SUMMARY OF PROCESSED TENSOR INPUTS ---")
+        # 1. Create Vocabularies
+        create_feature_vocabularies(df)
         
-        print("\nUser Tower Inputs (Sample):")
-        for k, v in processed_data['user_features'].items():
-            print(f"  - {k}: dtype={v.dtype}, shape={v.shape}, sample='{v[0]}'")
-
-        print("\nItem Tower Inputs (Sample):")
-        for k, v in processed_data['item_features'].items():
-            print(f"  - {k}: dtype={v.dtype}, shape={v.shape}, sample='{v[0]}'")
-            
-        print(f"\nTarget Shape: {processed_data['target'].shape}")
+        # 2. Transform and Split Data
+        # Re-index the dataframe before splitting to ensure contiguous indices for slicing
+        df_indexed = df.reset_index(drop=True) 
+        transform_and_split_data(df_indexed)
+        
+        print("\n--- Feature Engineering Complete. Ready for Training! ---")
