@@ -53,12 +53,12 @@ def create_feature_vocabularies(df: pd.DataFrame) -> Tuple[Dict, Dict]:
         vocab = df[feature].astype(str).unique().tolist()
         item_specs[feature] = {'vocab': vocab, 'is_categorical': True}
 
-    # 2. Numerical Features (No vocab, just metadata)
+    # 2. Numerical Features (No vocab, but define shape: 1 for the Input Layer)
     for feature in ['user_risk_score', 'days_since_first_trade', 'recent_views_count']:
-        user_specs[feature] = {'is_categorical': False}
+        user_specs[feature] = {'is_categorical': False, 'shape': 1}
 
     for feature in ['market_cap_log', 'asset_volatility']:
-        item_specs[feature] = {'is_categorical': False}
+        item_specs[feature] = {'is_categorical': False, 'shape': 1}
         
     # Save the specifications
     vocabs = {'user_specs': user_specs, 'item_specs': item_specs}
